@@ -17,6 +17,5 @@ Route::get('/', function () {
 
 
 Route::prefix('/admin')->name('admin.')->group(function() {
-    // dd('bonjour');
     Route::get('/', 'Admin\HomeController@index')->name('home');
 });

@@ -35,6 +35,10 @@
         </div>
         <div class="box-body">
           Start creating your amazing application!
+          <div>
+              <button class="btn-empro">BTN BLUE</button>
+              <button class="btn-empro2">BTN ORANGE</button>
+          </div>
         </div>
         <!-- /.box-body -->
         <div class="box-footer">

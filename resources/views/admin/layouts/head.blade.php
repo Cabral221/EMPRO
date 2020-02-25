@@ -25,7 +25,7 @@ folder instead of downloading all of them to reduce the load. -->
 <link rel="stylesheet" href="{{asset('admin_asset/bower_components/bootstrap-daterangepicker/daterangepicker.css')}}">
 <!-- bootstrap wysihtml5 - text editor -->
 <link rel="stylesheet" href="{{asset('admin_asset/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css')}}">
-
+<link rel="stylesheet" href="{{asset('admin_asset/css/style.css')}}">
 @section('headsection')
 
 @show
