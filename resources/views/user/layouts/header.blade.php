@@ -2,8 +2,8 @@
 	
 	<div id="page">
 		
-	<nav class="fh5co-nav" role="navigation">
-		<div class="top">
+	<nav class="fh5co-nav empro_nav" role="navigation">
+		<div class="top" id="empro_nav">
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-12 text-right">
@@ -20,7 +20,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="top-menu">
+		<div class="top-menu empro_top" id="empro_top">
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-2">
@@ -28,11 +28,11 @@
 					</div>
 					<div class="col-xs-10 text-right menu-1">
 						<ul>
-							<li class="active"><a href="index.html">Acceuil</a></li>
-							<li><a href="courses.html">Formations</a></li>
-							<li><a href="teacher.html">Services</a></li>
-							<li><a href="about.html">Realisations</a></li>
-							<li><a href="pricing.html">About</a></li>
+							<li class="active"><a href="{{ route('user_home') }}">Acceuil</a></li>
+							<li><a href="{{ route('user_formation') }}">Formations</a></li>
+							<li><a href="{{ route('user_service') }}">Services</a></li>
+							<li><a href="{{ route('user_realisation') }}">Realisations</a></li>
+							<li><a href="{{ route('user_about') }}">About</a></li>
 							<!-- <li class="has-dropdown">
 								<a href="blog.html">Blog</a>
 								<ul class="dropdown">
@@ -42,9 +42,9 @@
 									<li><a href="#">API</a></li>
 								</ul>
 							</li> -->
-							<li><a href="contact.html">Contact</a></li>
+							<li><a href="{{ route('user_contact') }}">Contact</a></li>
 							<!-- <li class="btn-cta"><a href="#"><span>Login</span></a></li> -->
-							<li class="btn-cta"><a href="#"><span>Admission</span></a></li>
+							<li class="btn-cta"><a href="{{ route('user_admission') }}"><span>Admission</span></a></li>
 						</ul>
 					</div>
 				</div>
@@ -53,7 +53,7 @@
 		</div>
 	</nav>
 	
-	<aside id="fh5co-hero">
+	<!-- <aside id="fh5co-hero">
 		<div class="flexslider">
 			<ul class="slides">
 		   	<li style="background-image: url(user/images/e1.png);">
@@ -62,9 +62,9 @@
 		   			<div class="row">
 			   			<div class="col-md-8 col-md-offset-2 text-center slider-text">
 			   				<div class="slider-text-inner">
-                 <h1>@yield('title')</h1>
-									<h2>@yield('sub-heding')<a href="http://freehtml5.co/" target="_blank">freehtml5.co</a></h2>
-									<p><a class="btn btn-primary btn-lg" href="#">Start Learning Now!</a></p>
+                 					<h1 id="fh5co-logo">@yield('title')</h1>
+									<h2>@yield('sub-heding')<a href="http://freehtml5.co/" target="_blank"></a></h2>
+									<p><a class="btn btn-primary btn-lg" href="{{ route('user_admission') }}">Start Learning Now!</a></p>
 			   				</div>
 			   			</div>
 			   		</div>
@@ -76,9 +76,9 @@
 		   			<div class="row">
 			   			<div class="col-md-8 col-md-offset-2 text-center slider-text">
 			   				<div class="slider-text-inner">
-                 <h1>@yield('title')</h1>
-									<h2>@yield('sub-heding')<a href="http://freehtml5.co/" target="_blank">freehtml5.co</a></h2>
-									<p><a class="btn btn-primary btn-lg btn-learn" href="#">Start Learning Now!</a></p>
+                 					<h1 id="fh5co-logo">@yield('title')</h1>
+									<h2>@yield('sub-heding')<a href="http://freehtml5.co/" target="_blank"></a></h2>
+									<p><a class="btn btn-primary btn-lg btn-learn" href="{{ route('user_admission') }}">Start Learning Now!</a></p>
 			   				</div>
 			   			</div>
 			   		</div>
@@ -90,9 +90,9 @@
 		   			<div class="row">
 			   			<div class="col-md-8 col-md-offset-2 text-center slider-text">
 			   				<div class="slider-text-inner">
-			   					<h1>@yield('title')</h1>
-									<h2>@yield('sub-heding')<a href="http://freehtml5.co/" target="_blank">freehtml5.co</a></h2>
-									<p><a class="btn btn-primary btn-lg btn-learn" href="#">Start Learning Now!</a></p>
+			   					<h1 id="fh5co-logo">@yield('title')</h1>
+									<h2>@yield('sub-heding')<a href="http://freehtml5.co/" target="_blank"></a></h2>
+									<p><a class="btn btn-primary btn-lg btn-learn" href="{{ route('user_admission') }}">Start Learning Now!</a></p>
 			   				</div>
 			   			</div>
 			   		</div>
@@ -100,4 +100,29 @@
 		   	</li>		   	
 		  	</ul>
 	  	</div>
-	</aside>
+	</aside> -->
+
+	<asside>
+		
+		<div class="row container_empro">
+			<div class="container">
+			<div class="col-md-12  "> 
+				<img  src="user/images/empro.gif" alt="" srcset="" style="" class="empro_gif">
+			</div>
+			</div>
+
+			<!-- <div class="col-md-12">
+				<div class="container info">
+					<h1 id="" class="info">@yield('title')</h1>
+					<h3 class="info">@yield('sub-heding')<a href="http://freehtml5.co/" target="_blank"></a></h3>
+					<p><a class="btn btn-primary btn-lg btn-learn " href="{{ route('user_admission') }}">Start Learning Now!</a></p>
+				</div>
+			</div> -->
+				
+				
+				
+
+			
+		</div>
+	</asside>
+
