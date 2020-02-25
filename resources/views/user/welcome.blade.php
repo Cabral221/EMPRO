@@ -1,7 +1,7 @@
 @extends('user.app')
  @section('bg-img',asset('user/img/home-bg.jpg'))
- @section('title','Clean Blog')
-@section('sub-heding','Bootstrap Template')
+ @section('title','Welcome To EMPRO')
+@section('sub-heding','Un Eleve Un Metier Une Proffession')
 @section('head')
 <meta name="csrf-token" content="{{ csrf_token() }}">
   <style>
@@ -23,10 +23,10 @@
 				<div class="col-md-3 col-sm-6 text-center animate-box">
 					<div class="services">
 						<span class="icon">
-							<i class="icon-shop"></i>
+							<i class="icon-study"></i>
 						</span>
 						<div class="desc">
-							<h3><a href="#">Business</a></h3>
+							<h3><a href="#">Formations</a></h3>
 							<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
 						</div>
 					</div>
@@ -37,7 +37,7 @@
 							<i class="icon-heart4"></i>
 						</span>
 						<div class="desc">
-							<h3><a href="#">Health &amp; Psychology</a></h3>
+							<h3><a href="#">Disign</a></h3>
 							<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
 						</div>
 					</div>
@@ -45,10 +45,11 @@
 				<div class="col-md-3 col-sm-6 text-center animate-box">
 					<div class="services">
 						<span class="icon">
-							<i class="icon-banknote"></i>
+							<i class="icon-laptop-code"></i>
+							<!-- <i class="fas fa-laptop-code"></i> -->
 						</span>
 						<div class="desc">
-							<h3><a href="#">Accounting</a></h3>
+							<h3><a href="#">Creation de site web</a></h3>
 							<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
 						</div>
 					</div>
@@ -59,55 +60,12 @@
 							<i class="icon-lab2"></i>
 						</span>
 						<div class="desc">
-							<h3><a href="#">Science &amp; Technology</a></h3>
+							<h3><a href="#">Mintenance Informatique</a></h3>
 							<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
 						</div>
 					</div>
 				</div>
-				<div class="col-md-3 col-sm-6 text-center animate-box">
-					<div class="services">
-						<span class="icon">
-							<i class="icon-photo"></i>
-						</span>
-						<div class="desc">
-							<h3><a href="#">Art &amp; Media</a></h3>
-							<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 col-sm-6 text-center animate-box">
-					<div class="services">
-						<span class="icon">
-							<i class="icon-home-outline"></i>
-						</span>
-						<div class="desc">
-							<h3><a href="#">Real Estate</a></h3>
-							<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 col-sm-6 text-center animate-box">
-					<div class="services">
-						<span class="icon">
-							<i class="icon-bubble3"></i>
-						</span>
-						<div class="desc">
-							<h3><a href="#">Language</a></h3>
-							<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 col-sm-6 text-center animate-box">
-					<div class="services">
-						<span class="icon">
-							<i class="icon-world"></i>
-						</span>
-						<div class="desc">
-							<h3><a href="#">Web &amp; Programming</a></h3>
-							<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
-						</div>
-					</div>
-				</div>
+				
 			</div>
 		</div>
     </div>
@@ -168,50 +126,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-3 col-sm-6 text-center animate-box">
-					<div class="services">
-						<span class="icon">
-							<i class="icon-photo"></i>
-						</span>
-						<div class="desc">
-							<h3><a href="#">Art &amp; Media</a></h3>
-							<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 col-sm-6 text-center animate-box">
-					<div class="services">
-						<span class="icon">
-							<i class="icon-home-outline"></i>
-						</span>
-						<div class="desc">
-							<h3><a href="#">Real Estate</a></h3>
-							<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 col-sm-6 text-center animate-box">
-					<div class="services">
-						<span class="icon">
-							<i class="icon-bubble3"></i>
-						</span>
-						<div class="desc">
-							<h3><a href="#">Language</a></h3>
-							<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 col-sm-6 text-center animate-box">
-					<div class="services">
-						<span class="icon">
-							<i class="icon-world"></i>
-						</span>
-						<div class="desc">
-							<h3><a href="#">Web &amp; Programming</a></h3>
-							<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
-						</div>
-					</div>
-				</div>
+			
 			</div>
 		</div>
 	</div>

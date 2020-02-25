@@ -91,6 +91,7 @@
 	<script src="{{asset('user/js/simplyCountdown.js')}}"></script>
 	<!-- Main -->
 	<script src="{{asset('user/js/main.js')}}"></script>
+	<script src="{{asset('user/js/user.js')}}"></script>
 	<script>
     var d = new Date(new Date().getTime() + 1000 * 120 * 120 * 2000);
 
