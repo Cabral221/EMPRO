@@ -15,56 +15,67 @@
  <div id="fh5co-contact">
 		<div class="container">
 			<div class="row">
+			@include('includes.message')
 				<div class="col-md-5 col-md-push-1 animate-box">
 					
 					<div class="fh5co-contact-info">
 						<h3>Contact Information</h3>
 						<ul>
-							<li class="address">198 West 21th Street, <br> Suite 721 New York NY 10016</li>
-							<li class="phone"><a href="tel://1234567920">+ 1235 2355 98</a></li>
-							<li class="email"><a href="mailto:info@yoursite.com">info@yoursite.com</a></li>
-							<li class="url"><a href="http://freehtml5.co">freeHTML5.co</a></li>
+							<li class="address">Ecole Biscuiterie<br> Niary Tally</li>
+							<li class="phone"><a href="tel://1234567920">+ 221 000 00 00</a></li>
+							<li class="email"><a href="mailto:info@yoursite.com">empro@gmail.com</a></li>
+							<li class="url"><a href="http://freehtml5.co">empro-sn.com</a></li>
 						</ul>
 					</div>
 
 				</div>
 				<div class="col-md-6 animate-box">
 					<h3>Get In Touch</h3>
-					<form action="#">
+					<form action="{{ route('contact.index') }}" method="post">
+					@csrf
 						<div class="row form-group">
 							<div class="col-md-6">
 								<!-- <label for="fname">First Name</label> -->
-								<input type="text" id="fname" class="form-control" placeholder="Your firstname">
+								<input type="text" id="fname" name="firstname" class="form-control" placeholder="Your firstname">
 							</div>
 							<div class="col-md-6">
 								<!-- <label for="lname">Last Name</label> -->
-								<input type="text" id="lname" class="form-control" placeholder="Your lastname">
+								<input type="text" id="lname" name="lastname" class="form-control" placeholder="Your lastname">
 							</div>
 						</div>
 
 						<div class="row form-group">
 							<div class="col-md-12">
 								<!-- <label for="email">Email</label> -->
-								<input type="text" id="email" class="form-control" placeholder="Your email address">
+								<input type="text" id="email" name="email" class="form-control" placeholder="Your email address">
 							</div>
 						</div>
 
 						<div class="row form-group">
 							<div class="col-md-12">
 								<!-- <label for="subject">Subject</label> -->
-								<input type="text" id="subject" class="form-control" placeholder="Your subject of this message">
+								<input type="text" id="subject" name="subject" class="form-control" placeholder="Your subject of this message">
 							</div>
 						</div>
 
 						<div class="row form-group">
 							<div class="col-md-12">
 								<!-- <label for="message">Message</label> -->
-								<textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="Say something about us"></textarea>
+								<textarea name="message" id="message" name="message" cols="30" rows="10" class="form-control" placeholder="Say something about us"></textarea>
 							</div>
 						</div>
-						<div class="form-group">
-							<input type="submit" value="Send Message" class="btn btn-primary">
+    
+						<div class="form-group col-md-12 "  style="">
+						<div class="row">
+						<div class="col-md-6">
+						<button type="submit" class="btn btn-empro btn-block">Send</button>
 						</div>
+						
+						<div class="col-md-6">
+						<button type="reset" class="btn btn-empro2 btn-block">Reset</button>
+						</div>
+						</div>
+					</div>
 
 					</form>		
 				</div>

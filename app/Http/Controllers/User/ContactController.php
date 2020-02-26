@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers\User;
 
-use App\Http\Controllers\Controller;
+use App\Model\User\Contact;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
 class ContactController extends Controller
 {
@@ -35,7 +36,22 @@ class ContactController extends Controller
      */
     public function store(Request $request)
     {
-        //
+         $validator = $this->validate($request,[
+            'firstname' => 'required',
+            'lastname' => 'required',
+            'email' => 'required|email|unique:admissions',
+            'subject' => 'required',
+            'message' => 'required',
+        ]);
+
+        $contact = new Contact;
+        $contact->firstname = $request->firstname;
+        $contact->lastname = $request->lastname;
+        $contact->email = $request->email;
+        $contact->subject = $request->subject;
+        $contact->message = $request->message;
+        $contact->save();
+        return redirect(route('contact.index'))->with('message','jcdhdhdh');
     }
 
     /**

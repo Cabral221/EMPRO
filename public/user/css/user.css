@@ -42,3 +42,33 @@
 #info_footer{
     color: white;
 }
+
+/* style de buttons et texte */
+.btn-empro{
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 25px;
+    color: #ffffff;
+    background: linear-gradient(to right,  rgb(25,53,95) 7%, rgb(60,127,255) 37%, rgb(69,145,255) 43%,rgb(25,53,95) 100%);
+}
+.btn-empro:hover{
+    background: transparent;
+    color: rgb(25,53,95);
+    border: 2px solid rgb(25,53,95);
+
+}
+.btn-empro2{
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 25px;
+    color: rgb(252,69,43);
+    background: transparent;
+    border: 2px solid rgb(252,69,43);
+    /* background: linear-gradient(to right,  rgb(252,69,43) 8%, rgb(240, 91, 65) 37%, rgb(228, 110, 71) 53%,rgb(252,77,43) 100%); */
+}
+.btn-empro2:hover{
+    color: #fff;
+    background: linear-gradient(to right,  rgb(252,69,43) 8%, rgb(240, 91, 65) 37%, rgb(228, 110, 71) 53%,rgb(252,77,43) 100%);
+
+}
+/* fin des style */
