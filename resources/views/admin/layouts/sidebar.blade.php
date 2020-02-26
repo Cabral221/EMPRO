@@ -23,11 +23,12 @@
       <!-- /.search form -->
       <!-- sidebar menu: : style can be found in sidebar.less -->
       <ul class="sidebar-menu" data-widget="tree">
-        <li class="header">MAIN NAVIGATION</li>
+        <li class="header">Menu</li>
         <li class="active treeview">
-            <li class=""><a href="#"><i class="fa fa-circle-o"></i> Posts</a></li>
-            <li class=""><a href="#"><i class="fa fa-circle-o"></i> Categories</a></li>
-            <li class=""><a href="#"><i class="fa fa-circle-o"></i> Tags</a></li>
+            <li class=""><a href="{{ route('admin.about.index') }}"><i class="fa fa-circle-o"></i> A propos</a></li>
+            <li class=""><a href="#"><i class="fa fa-circle-o"></i> Formation</a></li>
+            <li class=""><a href="#"><i class="fa fa-circle-o"></i> Services</a></li>
+            <li class=""><a href="#"><i class="fa fa-circle-o"></i> Utilisateurs</a></li>
             <li class=""><a href="#"><i class="fa fa-circle-o"></i> Users</a></li>
             <li class=""><a href="#"><i class="fa fa-circle-o"></i> Roles</a></li>
             <li class=""><a href="#"><i class="fa fa-circle-o"></i> Permissions</a></li>
@@ -36,6 +37,6 @@
     </section>
     <!-- /.sidebar -->
   </aside>
- 
+
 
 

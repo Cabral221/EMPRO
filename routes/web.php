@@ -34,4 +34,7 @@ Route::group(['namespace' => 'User'],function(){
 
 Route::prefix('/admin')->name('admin.')->group(function() {
     Route::get('/', 'Admin\HomeController@index')->name('home');
+
+    Route::resource('/service', 'Admin\ServiceController');
+    Route::resource('/about', 'Admin\AboutController');
 });
