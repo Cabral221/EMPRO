@@ -1,12 +1,11 @@
 <?php
 
-namespace App\Http\Controllers\User;
+namespace App\Http\Controllers\Admin;
 
-use App\Model\User\Contact;
-use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
 
-class ContactController extends Controller
+class ServiceController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,7 +14,7 @@ class ContactController extends Controller
      */
     public function index()
     {
-        return view('user.contact');
+        return view('admin.service.index');
     }
 
     /**
@@ -36,22 +35,7 @@ class ContactController extends Controller
      */
     public function store(Request $request)
     {
-         $validator = $this->validate($request,[
-            'firstname' => 'required',
-            'lastname' => 'required',
-            'email' => 'required|email|unique:admissions',
-            'subject' => 'required',
-            'message' => 'required',
-        ]);
-
-        $contact = new Contact;
-        $contact->firstname = $request->firstname;
-        $contact->lastname = $request->lastname;
-        $contact->email = $request->email;
-        $contact->subject = $request->subject;
-        $contact->message = $request->message;
-        $contact->save();
-        return redirect(route('contact.index'))->with('message','jcdhdhdh');
+        //
     }
 
     /**

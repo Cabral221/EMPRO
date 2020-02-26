@@ -2,7 +2,7 @@
 <div class="pull-right hidden-xs">
 <b>Version</b> {{ Carbon\carbon::now()->year }}
 </div>
-<strong>Copyright &copy; 2020-{{ Carbon\carbon::now()->year }} <a href="https://adminlte.io">EMPRO</a>.</strong> Blog Exemple.
+<strong>Copyright &copy; 2020-{{ Carbon\carbon::now()->year }} <a href="{{ route('user_home') }}">EMPRO</a>.</strong> Blog Exemple.
 </footer>
 
 

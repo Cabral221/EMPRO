@@ -14,6 +14,7 @@
 
  <div id="fh5co-contact">
 		<div class="container">
+    @include('includes.message')
 			<div class="row">
 				<div class="col-md-4 col-md-push-1 animate-box">
 					
@@ -23,7 +24,6 @@
 							<li class="address">198 West 21th Street, <br> Suite 721 New York NY 10016</li>
 							<li class="phone"><a href="tel://1234567920">+ 1235 2355 98</a></li>
 							<li class="email"><a href="mailto:info@yoursite.com">info@yoursite.com</a></li>
-							<li class="url"><a href="http://freehtml5.co">freeHTML5.co</a></li>
 						</ul>
 					</div>
 
@@ -40,17 +40,17 @@
               <div class="row form-group">
                   <div class="col-md-2 pull-left">
                    <div class="form-group">
-                   <label style="margin-top:-10px;" for="damme"> Ma Damme <input type="radio" class="" name="damme" id="damme" ></label>
+                   <label style="margin-top:-10px;" for="damme"> Ma Damme <input type="radio" class="" name="kind" value="0" id="damme" ></label>
                    </div>
                   </div>
                   <div class="col-md-2 pull-left">
                    <div class="form-group">
-                   <label style="margin-top:-10px;" for="demoisel"> Ma Demoisel  <input type="radio" class="" name="demoisel"  id="demoisel" ></label>
+                   <label style="margin-top:-10px;" for="demoisel"> Ma Demoisel  <input type="radio" class="" name="kind" value="1"  id="demoisel" ></label>
                    </div>
                   </div>
                   <div class="col-md-2 pull-left">
                       <div class="form-group">
-                      <label style="margin-top:-10px;" for="monsier"> Monsier   <input type="radio" class="" name="monsier"  id="monsier" ></label>
+                      <label style="margin-top:-10px;" for="monsier"> Monsier   <input type="radio" class="" name="kind" value="2"  id="monsier" ></label>
                       </div>
                   </div>
               </div>
@@ -92,8 +92,8 @@
              <div class="form-group">
 
               <div class="col-md-4">
-                <label for="date">Date Naissance</label>
-                <input type="date" id="date" name="date" class="form-control" placeholder="">
+                <label for="birthday">Date Naissance</label>
+                <input type="date" id="birthday" name="birthday" class="form-control" placeholder="">
               </div>
 
                 <div class="col-md-4">
@@ -114,20 +114,22 @@
 							<div class="col-md-12">
                 <br>
                 <div class="row">
-                <div class="col-md-4 checkbox" >
+                <div class="col-md-4" >
                 <label for="">Chisir votre niveau</label>
               
+                  <div class="checkbox">
                   <div class="">
-                    <label for="initial">  <input type="checkbox" name="initial[]" id="initial"> Initial</label>
+                    <label for="initial">  <input type="checkbox" name="niveau[]" value="initial" id="initial"> Initial</label>
                    
                   </div>
                   <div class="">
-                    <label for="itermediare"> <input type="checkbox" name="itermediare[]" id="itermediare"> Intermediare</label>
+                    <label for="itermediare"> <input type="checkbox" name="niveau[]" value="itermediare" id="itermediare"> Intermediare</label>
                     
                   </div>
                   <div class="">
-                    <label for="avance"> <input type="checkbox" name="avance[]" id="avance"> Avance</label>
+                    <label for="avance"> <input type="checkbox" name="niveau[]" value="avance" id="avance"> Avance</label>
                     
+                  </div>
                   </div>
               </div>
 
@@ -136,11 +138,11 @@
             <label for="">Avez-vous des notions en TIC</label>
               <div class="form-group radio">
                   <div class="form-group">
-                    <label for="oui"> <input type="radio" name="oui" value="oui" id="oui">Oui</label>
+                    <label for="oui"> <input type="radio" name="informatic" value="1" id="oui">Oui</label>
                   </div>
 
                   <div class="form-group">
-                    <label for="non"> <input type="radio" name="non" value="non" id="non">Non</label>
+                    <label for="non"> <input type="radio" name="informatic" value="0" id="non">Non</label>
                   </div>
               </div>
             </div>
@@ -153,11 +155,11 @@
               <label for="">Disposer vous d'un ordinateur</label>
                 <div class="form-group radio">
                     <div class="form-group">
-                      <label for="oui_ord"> <input type="radio" name="oui" value="oui_ord" id="oui_ord">Oui</label>
+                      <label for="oui_ord"> <input type="radio" name="computer" value="1" id="oui_ord">Oui</label>
                     </div>
 
                     <div class="form-group">
-                      <label for="non_ord"> <input type="radio" name="non" value="non_ord" id="non_ord">Non</label>
+                      <label for="non_ord"> <input type="radio" name="computer" value="0" id="non_ord">Non</label>
                     </div>
                 </div>
             </div>
@@ -170,11 +172,11 @@
           <div class="form-group col-md-12 text-center"  style="">
               <div class="row">
               <div class="col-md-6">
-								<button type="submit" class="btn btn-primary btn-block">Send</button>
+								<button type="submit" class="btn btn-block btn-empro">Send</button>
               </div>
               
 							<div class="col-md-6">
-              <button type="reset" class="btn btn-secondary btn-block">Reset</button>
+              <button type="reset" class="btn btn-block btn-empro2">Reset</button>
               </div>
               </div>
           </div>
