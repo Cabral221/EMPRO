@@ -72,7 +72,6 @@
 			
 		</div>
 	</div>
-	<div id="map" class="fh5co-map " ></div>
 
  @endsection
 

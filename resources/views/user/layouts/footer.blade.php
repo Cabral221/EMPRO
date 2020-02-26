@@ -2,9 +2,15 @@
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="row row-pb-md">
-				<div class="col-md-3 fh5co-widget">
-					<h3>About Education</h3>
-					<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque dicta adipisci architecto culpa amet.</p>
+				<div class="col-md-3 fh5co-widget">	
+					<div class="fh5co-contact-info">
+						<h3>Contact Information</h3>
+						<ul >
+							<li class="address" id="info_footer">Ecole Biscuiterie, <br> Niary Tally</li>
+							<li class="phone "><a id="info_footer" href="tel://1234567920">(+221) 00 000 00 00 </a></li>
+							<li class="email" ><a id="info_footer" href="mailto:info@yoursite.com">empro@gmail.com</a></li>
+						</ul>
+					</div>
 				</div>
 				<div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1 fh5co-widget">
 					<h3>Learning</h3>

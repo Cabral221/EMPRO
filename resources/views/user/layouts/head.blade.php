@@ -44,10 +44,10 @@
 	<!-- Theme style  -->
 	<link rel="stylesheet" href="{{asset('user/css/style.css')}}">
 	<link rel="stylesheet" href="{{asset('user/images')}}">
-	<link rel="stylesheet" href="{{asset('user/css/user.css')}}">
 	<!-- Modernizr JS -->
 	<script src="{{asset('user/js/modernizr-2.6.2.min.js')}}"></script>
 	<!-- FOR IE9 below -->
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
+	<link rel="stylesheet" href="{{asset('user/css/user.css')}}">

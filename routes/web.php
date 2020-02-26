@@ -18,9 +18,9 @@
 Route::group(['namespace' => 'User'],function(){
     Route::get('/','HomeController@index')->name('user_home');
 
-    Route::get('/contact','ContactController@index')->name('user_contact');
+    Route::resource('/contact','ContactController');
 
-    Route::get('/admission','AdmissionController@index')->name('user_admission');
+    Route::resource('/admission','AdmissionController');
 
     Route::get('/formation','FormationController@index')->name('user_formation');
 

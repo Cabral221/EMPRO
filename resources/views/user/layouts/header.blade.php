@@ -27,12 +27,12 @@
 						<div id="fh5co-logo"><a href=""><i class="icon-study"></i>EMPRO<span></span></a></div>
 					</div>
 					<div class="col-xs-10 text-right menu-1">
-						<ul>
-							<li class="active"><a href="{{ route('user_home') }}">Acceuil</a></li>
-							<li><a href="{{ route('user_formation') }}">Formations</a></li>
-							<li><a href="{{ route('user_service') }}">Services</a></li>
-							<li><a href="{{ route('user_realisation') }}">Realisations</a></li>
-							<li><a href="{{ route('user_about') }}">About</a></li>
+						<ul class="ul_empro">
+							<li class="active"><a id="a_empro" href="{{ route('user_home') }}">Acceuil</a></li>
+							<li><a id="a_empro" href="{{ route('user_formation') }}">Formations</a></li>
+							<li><a id="a_empro" href="{{ route('user_service') }}">Services</a></li>
+							<li><a id="a_empro" href="{{ route('user_realisation') }}">Realisations</a></li>
+							<li><a id="a_empro" href="{{ route('user_about') }}">About</a></li>
 							<!-- <li class="has-dropdown">
 								<a href="blog.html">Blog</a>
 								<ul class="dropdown">
@@ -42,9 +42,9 @@
 									<li><a href="#">API</a></li>
 								</ul>
 							</li> -->
-							<li><a href="{{ route('user_contact') }}">Contact</a></li>
+							<li><a id="a_empro" href="{{ route('contact.index') }}">Contact</a></li>
 							<!-- <li class="btn-cta"><a href="#"><span>Login</span></a></li> -->
-							<li class="btn-cta"><a href="{{ route('user_admission') }}"><span>Admission</span></a></li>
+							<li class="btn-cta"><a id="a_empro" href="{{ route('admission.index') }}"><span>Admission</span></a></li>
 						</ul>
 					</div>
 				</div>
@@ -64,7 +64,7 @@
 			   				<div class="slider-text-inner">
                  					<h1 id="fh5co-logo">@yield('title')</h1>
 									<h2>@yield('sub-heding')<a href="http://freehtml5.co/" target="_blank"></a></h2>
-									<p><a class="btn btn-primary btn-lg" href="{{ route('user_admission') }}">Start Learning Now!</a></p>
+									<p><a class="btn btn-primary btn-lg" href="{{ route('admission.index') }}">Start Learning Now!</a></p>
 			   				</div>
 			   			</div>
 			   		</div>
@@ -78,7 +78,7 @@
 			   				<div class="slider-text-inner">
                  					<h1 id="fh5co-logo">@yield('title')</h1>
 									<h2>@yield('sub-heding')<a href="http://freehtml5.co/" target="_blank"></a></h2>
-									<p><a class="btn btn-primary btn-lg btn-learn" href="{{ route('user_admission') }}">Start Learning Now!</a></p>
+									<p><a class="btn btn-primary btn-lg btn-learn" href="{{ route('admission.index') }}">Start Learning Now!</a></p>
 			   				</div>
 			   			</div>
 			   		</div>
@@ -92,7 +92,7 @@
 			   				<div class="slider-text-inner">
 			   					<h1 id="fh5co-logo">@yield('title')</h1>
 									<h2>@yield('sub-heding')<a href="http://freehtml5.co/" target="_blank"></a></h2>
-									<p><a class="btn btn-primary btn-lg btn-learn" href="{{ route('user_admission') }}">Start Learning Now!</a></p>
+									<p><a class="btn btn-primary btn-lg btn-learn" href="{{ route('admission.index') }}">Start Learning Now!</a></p>
 			   				</div>
 			   			</div>
 			   		</div>
@@ -110,12 +110,12 @@
 				<img  src="user/images/empro.gif" alt="" srcset="" style="" class="empro_gif">
 			</div>
 			</div>
-
-			<!-- <div class="col-md-12">
+<!-- 
+			<div class="col-md-12">
 				<div class="container info">
 					<h1 id="" class="info">@yield('title')</h1>
 					<h3 class="info">@yield('sub-heding')<a href="http://freehtml5.co/" target="_blank"></a></h3>
-					<p><a class="btn btn-primary btn-lg btn-learn " href="{{ route('user_admission') }}">Start Learning Now!</a></p>
+					<p><a class="btn btn-primary btn-lg btn-learn " href="{{ route('admission.index') }}">Start Learning Now!</a></p>
 				</div>
 			</div> -->
 				

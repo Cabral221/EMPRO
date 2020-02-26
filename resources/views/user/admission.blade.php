@@ -31,22 +31,27 @@
         
 				<div class="col-md-8 animate-box">
 					<h3>Register here</h3>
-					<form action="#">
+					<form action="{{ route('admission.store') }}" method="post">
+            @csrf
 						<div class="row form-group">
         <!-- les button -->
-            <div class="col-md-12">
+            <div class="col-md-12 form-group">
+            <label for="">Votre situation matriminial</label>
               <div class="row form-group">
-                  <div class="col-md-3 pull-left">
-                    <label for="ma_damme"> Ma Damme</label>
-                    <input type="radio" name="ma_damme" id="">
+                  <div class="col-md-2 pull-left">
+                   <div class="form-group">
+                   <label style="margin-top:-10px;" for="damme"> Ma Damme <input type="radio" class="" name="damme" id="damme" ></label>
+                   </div>
                   </div>
-                  <div class="col-md-3 pull-center">
-                    <label for="ma_demoisel"> Ma Demoisel</label>
-                    <input type="radio" name="ma_demoisel" id="">
+                  <div class="col-md-2 pull-left">
+                   <div class="form-group">
+                   <label style="margin-top:-10px;" for="demoisel"> Ma Demoisel  <input type="radio" class="" name="demoisel"  id="demoisel" ></label>
+                   </div>
                   </div>
-                  <div class="col-md-3 pull-rigth">
-                    <label for="monsier"> Monsier</label>
-                    <input type="radio" name="monsier" id="">
+                  <div class="col-md-2 pull-left">
+                      <div class="form-group">
+                      <label style="margin-top:-10px;" for="monsier"> Monsier   <input type="radio" class="" name="monsier"  id="monsier" ></label>
+                      </div>
                   </div>
               </div>
             </div>
@@ -65,7 +70,10 @@
           </div>
             
 
-            <div class="form-group">
+           <div class="col-md-12">
+             <br>
+             <div class="row">
+             <div class="form-group">
             <div class="col-md-6">
               <label for="email">Email</label>
               <input type="email" id="email" name="email" class="form-control" placeholder="Your email address">
@@ -75,37 +83,91 @@
               <input type="number" id="phone" name="phone" class="form-control" placeholder="Your phone number">
             </div>
             </div>
-              
-             <div class="form-group">
-             <div class="col-md-6">
-              <label for="date">Date Naissance</label>
-              <input type="date" id="date" name="date" class="form-control" placeholder="">
-            </div>
-              <div class="col-md-6">
-              <label for="lieu">Lieu</label>
-              <input type="text" id="lieu" name="lieu" class="form-control" placeholder="">
-							</div>
              </div>
+           </div>
+              
+           <div class="col-md-12">
+             <br>
+             <div class="row">
+             <div class="form-group">
+
+              <div class="col-md-4">
+                <label for="date">Date Naissance</label>
+                <input type="date" id="date" name="date" class="form-control" placeholder="">
+              </div>
+
+                <div class="col-md-4">
+                <label for="lieu">Lieu</label>
+                <input type="text" id="lieu" name="lieu" class="form-control" placeholder="">
+                </div>
+
+                <div class="col-md-4">
+                <label for="adresse">Adresse</label>
+                <input type="text" id="adresse" name="adresse" class="form-control" placeholder="">
+                </div>
+
+            </div>
+             </div>
+           </div>
 
 				
-							<div class="col-md-12 " >
+							<div class="col-md-12">
+                <br>
+                <div class="row">
+                <div class="col-md-4 checkbox" >
                 <label for="">Chisir votre niveau</label>
               
                   <div class="">
-                    <label for="initial">  <input type="checkbox" name="initial[]" id=""> Initial</label>
+                    <label for="initial">  <input type="checkbox" name="initial[]" id="initial"> Initial</label>
                    
                   </div>
                   <div class="">
-                    <label for="itermediare"> <input type="checkbox" name="itermediare[]" id=""> Intermediare</label>
+                    <label for="itermediare"> <input type="checkbox" name="itermediare[]" id="itermediare"> Intermediare</label>
                     
                   </div>
                   <div class="">
-                    <label for="avance"> <input type="checkbox" name="avance[]" id=""> Avance</label>
+                    <label for="avance"> <input type="checkbox" name="avance[]" id="avance"> Avance</label>
                     
                   </div>
               </div>
+
+        <!-- les button -->
+            <div class="col-md-4">
+            <label for="">Avez-vous des notions en TIC</label>
+              <div class="form-group radio">
+                  <div class="form-group">
+                    <label for="oui"> <input type="radio" name="oui" value="oui" id="oui">Oui</label>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="non"> <input type="radio" name="non" value="non" id="non">Non</label>
+                  </div>
+              </div>
+            </div>
+        <!-- fin des button -->
+
+
+
+                 <!-- les button -->
+              <div class="col-md-4">
+              <label for="">Disposer vous d'un ordinateur</label>
+                <div class="form-group radio">
+                    <div class="form-group">
+                      <label for="oui_ord"> <input type="radio" name="oui" value="oui_ord" id="oui_ord">Oui</label>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="non_ord"> <input type="radio" name="non" value="non_ord" id="non_ord">Non</label>
+                    </div>
+                </div>
+            </div>
+        <!-- fin des button -->
+
+                </div>
+              </div>
+
               
-          <div class="form-group col-md-12 text-center"  style="margin-top:18px;">
+          <div class="form-group col-md-12 text-center"  style="">
               <div class="row">
               <div class="col-md-6">
 								<button type="submit" class="btn btn-primary btn-block">Send</button>
@@ -117,13 +179,15 @@
               </div>
           </div>
 
+
 					</form>		
 				</div>
 			</div>
 			
 		</div>
 	</div>
-	<div id="map" class="fh5co-map bottom-form"></div>
+	</div>
+
 
  @endsection
 

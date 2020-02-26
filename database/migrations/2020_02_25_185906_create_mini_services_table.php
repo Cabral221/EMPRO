@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateMiniServicesTablme extends Migration
+class CreateMiniServicesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -17,7 +17,7 @@ class CreateMiniServicesTablme extends Migration
             $table->bigIncrements('id');
             $table->string('libele');
             $table->integer('service_id');
-            $table->flàot('prix');
+            $table->float('prix');
             $table->timestamps();
         });
     }
