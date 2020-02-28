@@ -1,13 +1,54 @@
 .empro_nav{
     overflow: hidden;
-    background-color: #fff;
-    position: fixed;
+    background: linear-gradient(to right,  rgb(25,53,95) 7%, rgb(60,127,255) 37%, rgb(69,145,255) 43%,rgb(25,53,95) 100%);
+    /* background: linear-gradient(to right,  rgb(252,69,43) 8%, rgb(240, 91, 65) 37%, rgb(228, 110, 71) 53%,rgb(252,77,43) 100%); */
+    /* position: fixed; */
     top: 0;
     width: 100%;
+    color: white;
+}
+#empro-logo{
+    color: rgb(25,53,95);
+}
+.class-active{
+    background-color: rgb(252,69,43);
+}
+.empro_top{
+    background: white;
+    /* background: linear-gradient(to right,  rgb(25,53,95) 7%, rgb(60,127,255) 37%, rgb(69,145,255) 43%,rgb(25,53,95) 100%); */
+    border-bottom:3px solid rgb(25,53,95)  ;
+    border-top:3px solid rgb(25,53,95)  ;
+    position: fixed;
+    margin-top:-4px;
+    width: 100%;
+    z-index: 2;
+}
+.menu_top{
+    /* position: fixed; */
+    /* width: 100%; */
+    z-index: 2;
+}
+.logo-empro{
+    height: 40px;
+    /* width: auto; */
+}
+#num,#social{
+    color:white;
+}
+.empro_top ul li a{
+    color: rgb(25,53,95);
 }
 
-.empro_top{
-    background-color: rgb(120, 120, 182);
+.admission{
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 25px;
+    color: #ffffff;
+    background: linear-gradient(to right,  rgb(252,69,43) 8%, rgb(240, 91, 65) 37%, rgb(228, 110, 71) 53%,rgb(252,77,43) 100%);
+
+}
+.admission:hover{
+    color:  rgb(25,53,95);;
 }
 
 .bottom-form{
@@ -17,9 +58,6 @@
 .container_empro{
     margin-left:10px ;
     margin-right:10px ;
-    margin-top: 13%;
-    /* padding-left: 20px; */
-    /* background-color:rgb(73, 73, 80); */
     margin-bottom:-10%;
 }
 
@@ -30,11 +68,19 @@
 }
 
 #a_empro{
-    font-size: 18px;
+    font-size: 15px;
     font-weight: bold;
 }
+.site,.num{
+    font-weight: bold;
+    font-family: italic;
+    color:white;
+}
+.fh5co-logo:hover{
+    color:rgb(252,69,43);
+}
 #a_empro:hover{
-    color:blue;
+    color:rgb(252,69,43);
 }
 .phone,.address,.email,.url{
     color: white;
@@ -71,4 +117,163 @@
     background: linear-gradient(to right,  rgb(252,69,43) 8%, rgb(240, 91, 65) 37%, rgb(228, 110, 71) 53%,rgb(252,77,43) 100%);
 
 }
+@media screen and (min-width: 992px) {
+.container_empro{
+    margin-top:115px;
+}
+.radion #computer,#informatic{
+    margin-top:-10px ;
+}
+.radion #informatic, #computer{
+  margin-top:-10px ;
+}
+.radio .non{
+  margin-left:10px;
+}
+.radio{
+    display:flex;
+}
+
+}
 /* fin des style */
+
+/* responsive de empro.gif */
+/* js-fh5co-nav-toggle fh5co-nav-toggle fh5co-nav-white active */
+/* fin du responsive */
+
+@media screen and (max-width: 768px) {
+    .h5co-nav-toggle ,.js-fh5co-nav-toggle{
+        position: fixed;
+        color: rgb(252,69,43);
+    }
+    .container_empro{
+        margin-top: 115px;
+    }
+    .radio{
+        display: flex;
+    }
+ 
+    .lname{
+        margin-top: 15px;
+    }
+    #num {
+        float: left;
+        font-weight: 300;
+        margin-top: 0px;
+        border-left: 1px solid rgba(0, 0, 0, 0.08);
+        border-right: 1px solid rgba(0, 0, 0, 0.08);
+      }
+      .radion #computer,#informatic{
+        margin-top:-10px ;
+    }
+    .radion #informatic, #computer{
+      margin-top:-10px ;
+    }
+    .radio .non{
+        margin-left: 40px;
+    }
+  }
+  
+
+  @media screen and (max-width: 320px) {
+    .container_empro{
+        margin-top:115px;
+    }
+    .empro_top{
+        padding-top: -90%;
+    }
+  
+    .radio{
+        display: flex;
+        /* text-align: center; */
+    }
+    .btn-empro{
+        margin-bottom: 10px;
+    }
+    /* #oui_ord,#non_ord,#oui,#non{
+        margin-left: 10px;
+        margin-right: 10px;
+    } */
+    footer{
+        margin-top: -60%px;
+    }
+    /* .button{
+        margin-left: 25%;
+    } */
+
+    #social{
+        margin:-3px ;
+    }
+    #num {
+        float: left;
+        font-weight: 300;
+        margin-top: 0px;
+        border-left: 1px solid rgba(0, 0, 0, 0.08);
+        border-right: 1px solid rgba(0, 0, 0, 0.08);
+      }
+     .radion #computer,#informatic{
+          margin-top:-10px ;
+      }
+      .radion #informatic, #computer{
+        margin-top:-10px ;
+      }
+      .radio .non{
+        margin-left: 30px;
+    }
+  }
+
+  .form input:focus{
+    border: 2px solid rgb(60,127,255) ;
+  }
+  .form textarea:focus{
+    border: 2px solid rgb(60,127,255) ;
+  }
+
+
+.fh5co-blog .blog-img-holder {
+    display: block;
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 240px;
+  }
+  .shadow .animate-box{
+    /* -webkit-box-shadow: inset 0px 0px 124px 11px rgba(0, 0, 0, 0.74);
+    -moz-box-shadow: inset 0px 0px 124px 11px rgba(0, 0, 0, 0.74);
+    box-shadow: inset 0px 0px 124px 11px rgba(0, 0, 0, 0.74); */
+    box-shadow: inset 0px 0px 124px 11px rgb(60,127,255) ;
+    /* -moz-box-shadow: inset 0px 0px 124px 11px rgb(60,127,255) ; */
+  }
+
+  .fh5co-blog .blog-text {
+    position: relative;
+    background: rgba(0, 0, 0, 0.03);
+    width: 100%;
+    padding: 15px;
+    float: left;
+  }
+  .fh5co-blog .blog-text span {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+
+  .fh5co-blog .blog-text span.comment {
+    float: right;
+  }
+  .fh5co-blog .blog-text span.comment a {
+    color: rgba(0, 0, 0, 0.3);
+  }
+  .fh5co-blog .blog-text span.comment a i {
+    padding-left: 7px;
+  }
+  .fh5co-blog .blog-text h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    line-height: 1.5;
+  }
+

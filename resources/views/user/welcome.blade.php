@@ -37,7 +37,7 @@
 							<i class="icon-heart4"></i>
 						</span>
 						<div class="desc">
-							<h3><a href="#">Disign</a></h3>
+							<h3><a href="#">Design</a></h3>
 							<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
 						</div>
 					</div>
@@ -45,7 +45,7 @@
 				<div class="col-md-3 col-sm-6 text-center animate-box">
 					<div class="services">
 						<span class="icon">
-							<i class="icon-laptop-code"></i>
+							<i class="icon-heart4"></i>
 							<!-- <i class="fas fa-laptop-code"></i> -->
 						</span>
 						<div class="desc">

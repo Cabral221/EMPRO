@@ -23,15 +23,17 @@
 						<ul>
 							<li class="address">198 West 21th Street, <br> Suite 721 New York NY 10016</li>
 							<li class="phone"><a href="tel://1234567920">+ 1235 2355 98</a></li>
-							<li class="email"><a href="mailto:info@yoursite.com">info@yoursite.com</a></li>
+              <li class="email"><a href="mailto:info@yoursite.com">info@yoursite.com</a></li>
+              <li class="url"><a href="http://freehtml5.co">empro-sn.com</a></li>
 						</ul>
 					</div>
 
         </div>
         
 				<div class="col-md-8 animate-box">
-					<h3>Register here</h3>
-					<form action="{{ route('admission.store') }}" method="post">
+          <h3>Register here</h3>
+         
+					<form action="{{ route('admission.store') }}" method="post" class="form">
             @csrf
 						<div class="row form-group">
         <!-- les button -->
@@ -59,7 +61,7 @@
 
 					<div class="form-group">
           <div class="col-md-6">
-								<label for="fname">First Name</label>
+								<label for="fname" class="label_lname">First Name</label>
 								<input type="text" id="fname" name="firstname" class="form-control" placeholder="Your firstname">
               </div>
               
@@ -104,18 +106,19 @@
                 <div class="col-md-4">
                 <label for="adresse">Adresse</label>
                 <input type="text" id="adresse" name="adresse" class="form-control" placeholder="">
-                </div>
+            
+              </div>
 
             </div>
              </div>
            </div>
 
 				
-							<div class="col-md-12">
+							<div class="col-md-12 button">
                 <br>
                 <div class="row">
                 <div class="col-md-4" >
-                <label for="">Chisir votre niveau</label>
+                <label for="">Choisir votre niveau</label>
               
                   <div class="checkbox">
                   <div class="">
@@ -134,35 +137,35 @@
               </div>
 
         <!-- les button -->
-            <div class="col-md-4">
-            <label for="">Avez-vous des notions en TIC</label>
-              <div class="form-group radio">
+              <div class="col-md-4">
+                <label for="">Avez-vous des notions en TIC</label>
+                <div class="form-group radio">
                   <div class="form-group">
-                    <label for="oui"> <input type="radio" name="informatic" value="1" id="oui">Oui</label>
+                    <label for="informatic"><span class="informatic">Oui</span> <input type="radio" name="informatic" value="1" id="informatic"></label>
                   </div>
 
-                  <div class="form-group">
-                    <label for="non"> <input type="radio" name="informatic" value="0" id="non">Non</label>
+                  <div class="form-group non">
+                    <label for="informatic"><span class="informatic">Non</span> <input type="radio" name="informatic" value="0" id="informatic"></label>
                   </div>
+                </div>
               </div>
-            </div>
         <!-- fin des button -->
 
 
 
-                 <!-- les button -->
+              <!-- les button -->
               <div class="col-md-4">
-              <label for="">Disposer vous d'un ordinateur</label>
+                <label for="">Disposer vous d'un ordinateur</label>
                 <div class="form-group radio">
                     <div class="form-group">
-                      <label for="oui_ord"> <input type="radio" name="computer" value="1" id="oui_ord">Oui</label>
+                      <label for="computer"><span class="computer">Oui</span> <input type="radio" name="computer" value="1" id="computer"></label>
                     </div>
 
-                    <div class="form-group">
-                      <label for="non_ord"> <input type="radio" name="computer" value="0" id="non_ord">Non</label>
+                    <div class="form-group non">
+                      <label for="computer"><span class="computer">Non</span> <input type="radio" name="computer" value="0" id="computer"></label>
                     </div>
                 </div>
-            </div>
+              </div>
         <!-- fin des button -->
 
                 </div>
@@ -181,7 +184,7 @@
               </div>
           </div>
 
-
+         
 					</form>		
 				</div>
 			</div>

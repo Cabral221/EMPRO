@@ -14,7 +14,7 @@ class FormationController extends Controller
      */
     public function index()
     {
-        //
+        return view('user.formation.formation');
     }
 
     /**
@@ -44,9 +44,9 @@ class FormationController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show()
     {
-        //
+        return view('user.formation.show');
     }
 
     /**
