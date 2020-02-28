@@ -2,29 +2,31 @@
 	
 	<div id="page">
 		
-	<nav class="fh5co-nav empro_nav" role="navigation">
-		<div class="top" id="empro_nav">
-			<div class="container">
-				<div class="row">
-					<div class="col-xs-12 text-right">
-						<p class="site">www.empro-sn.com</p>
-						<p class="site">empro-sn@gmail.com</p>
-						<p class="num">Call: +01 123 456 7890</p>
-						<ul class="fh5co-social">
-							<li><a href="#"><i class="icon-facebook2"></i></a></li>
-							<li><a href="#"><i class="icon-twitter2"></i></a></li>
-							<li><a href="#"><i class="icon-dribbble2"></i></a></li>
-							<li><a href="#"><i class="icon-github"></i></a></li>
-						</ul>
+	<nav class="fh5co-nav " role="navigation">
+				<div class="top menu_top " id="empro_nav">
+					<div class="container empro_nav">
+						<div class="row">
+							<div class="col-xs-12  text-right">
+								<p class="site">www.empro-sn.com</p>
+								<p class="site">empro-sn@gmail.com</p>
+								<p class="num" id="num">Call: +01 123 456 7890</p>
+								<ul class="fh5co-social">
+									<li><a href="#"><i id="social" class="icon-facebook2"></i></a></li>
+									<li><a href="#"><i id="social" class="icon-twitter2"></i></a></li>
+									<li><a href="#"><i id="social" class="icon-instagram"></i></a></li>
+									<li><a href="#"><i id="social" class="icon-youtube"></i></a></li>
+									<li><a href="#"><i id="social" class="icon-github"></i></a></li>
+								</ul>
+							</div>
+						</div>
 					</div>
 				</div>
-			</div>
-		</div>
 		<div class="top-menu empro_top" id="empro_top">
-			<div class="container">
+			<div class="container ">
 				<div class="row">
 					<div class="col-xs-2">
-						<div id="fh5co-logo"><a href=""><i class="icon-study"></i>EMPRO<span></span></a></div>
+						
+						<div id="fh5co-logo"><a href="{{ route('user_home') }}" ><span class="fh5co-logo" id="empro-logo"><img class="logo-empro" src="user/images/logo-empro.png" alt="" srcset=""></span><span></span></a></div>
 					</div>
 					<div class="col-xs-10 text-right menu-1">
 						<ul class="ul_empro">
@@ -44,7 +46,7 @@
 							</li> -->
 							<li><a id="a_empro" href="{{ route('contact.index') }}">Contact</a></li>
 							<!-- <li class="btn-cta"><a href="#"><span>Login</span></a></li> -->
-							<li class="btn-cta"><a id="a_empro" href="{{ route('admission.index') }}"><span>Admission</span></a></li>
+							<li class=""><a  id="a_empro" href="{{ route('admission.index') }}"><span class="admission">Admission</span></a></li>
 						</ul>
 					</div>
 				</div>

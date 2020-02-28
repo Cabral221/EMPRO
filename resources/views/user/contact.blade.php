@@ -31,7 +31,7 @@
 				</div>
 				<div class="col-md-6 animate-box">
 					<h3>Get In Touch</h3>
-					<form action="{{ route('contact.index') }}" method="post">
+					<form action="{{ route('contact.index') }}" method="post" class="form">
 					@csrf
 						<div class="row form-group">
 							<div class="col-md-6">
@@ -40,7 +40,7 @@
 							</div>
 							<div class="col-md-6">
 								<!-- <label for="lname">Last Name</label> -->
-								<input type="text" id="lname" name="lastname" class="form-control" placeholder="Your lastname">
+								<input type="text" id="lname"  name="lastname" class=" lname form-control" placeholder="Your lastname">
 							</div>
 						</div>
 

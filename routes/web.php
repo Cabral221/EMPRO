@@ -23,6 +23,7 @@ Route::group(['namespace' => 'User'],function(){
     Route::resource('/admission','AdmissionController');
 
     Route::get('/formation','FormationController@index')->name('user_formation');
+    Route::get('/formation_show','FormationController@show')->name('formation_show');
 
     Route::get('/service','ServiceController@index')->name('user_service');
 
