@@ -1,5 +1,5 @@
 <footer id="fh5co-footer" role="contentinfo" style="background-image: url(images/img_bg_4.jpg);">
-		<div class="overlay"></div>
+	<div class="overlay"></div>
 		<div class="container">
 			<div class="row row-pb-md">
 				<div class="col-md-3 fh5co-widget">	
@@ -64,55 +64,54 @@
 					</p>
 				</div>
 			</div>
-
 		</div>
-	</footer>
-  </div>
+	</div>
+</footer>
   
 
-  <div class="gototop js-top">
-		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
-	</div>
-	
-	<!-- jQuery -->
-	<script src="{{asset('user/js/jquery.min.js')}}"></script>
-	<!-- jQuery Easing -->
-	<script src="{{asset('user/js/jquery.easing.1.3.js')}}"></script>
-	<!-- Bootstrap -->
-	<script src="{{asset('user/js/bootstrap.min.js')}}"></script>
-	<!-- Waypoints -->
-	<script src="{{asset('user/js/jquery.waypoints.min.js')}}"></script>
-	<!-- Stellar Parallax -->
-	<script src="{{asset('user/js/jquery.stellar.min.js')}}"></script>
-	<!-- Carousel -->
-	<script src="{{asset('user/js/owl.carousel.min.js')}}"></script>
-	<!-- Flexslider -->
-	<script src="{{asset('user/js/jquery.flexslider-min.js')}}"></script>
-	<!-- countTo -->
-	<script src="{{asset('user/js/jquery.countTo.js')}}"></script>
-	<!-- Magnific Popup -->
-	<script src="{{asset('user/js/jquery.magnific-popup.min.js')}}"></script>
-	<script src="{{asset('user/js/magnific-popup-options.js')}}"></script>
-	<!-- Count Down -->
-	<script src="{{asset('user/js/simplyCountdown.js')}}"></script>
-	<!-- Main -->
-	<script src="{{asset('user/js/main.js')}}"></script>
-	<script src="{{asset('user/js/user.js')}}"></script>
-	<script>
-    var d = new Date(new Date().getTime() + 1000 * 120 * 120 * 2000);
+<div class="gototop js-top">
+	<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+</div>
 
-    // default example
-    simplyCountdown('.simply-countdown-one', {
-        year: d.getFullYear(),
-        month: d.getMonth() + 1,
-        day: d.getDate()
-    });
+<!-- jQuery -->
+<script src="{{asset('user/js/jquery.min.js')}}"></script>
+<!-- jQuery Easing -->
+<script src="{{asset('user/js/jquery.easing.1.3.js')}}"></script>
+<!-- Bootstrap -->
+<script src="{{asset('user/js/bootstrap.min.js')}}"></script>
+<!-- Waypoints -->
+<script src="{{asset('user/js/jquery.waypoints.min.js')}}"></script>
+<!-- Stellar Parallax -->
+<script src="{{asset('user/js/jquery.stellar.min.js')}}"></script>
+<!-- Carousel -->
+<script src="{{asset('user/js/owl.carousel.min.js')}}"></script>
+<!-- Flexslider -->
+<script src="{{asset('user/js/jquery.flexslider-min.js')}}"></script>
+<!-- countTo -->
+<script src="{{asset('user/js/jquery.countTo.js')}}"></script>
+<!-- Magnific Popup -->
+<script src="{{asset('user/js/jquery.magnific-popup.min.js')}}"></script>
+<script src="{{asset('user/js/magnific-popup-options.js')}}"></script>
+<!-- Count Down -->
+<script src="{{asset('user/js/simplyCountdown.js')}}"></script>
+<!-- Main -->
+<script src="{{asset('user/js/main.js')}}"></script>
+<script src="{{asset('user/js/user.js')}}"></script>
+<script>
+var d = new Date(new Date().getTime() + 1000 * 120 * 120 * 2000);
 
-    //jQuery example
-    $('#simply-countdown-losange').simplyCountdown({
-        year: d.getFullYear(),
-        month: d.getMonth() + 1,
-        day: d.getDate(),
-        enableUtc: false
-    });
-	</script>
+// default example
+simplyCountdown('.simply-countdown-one', {
+	year: d.getFullYear(),
+	month: d.getMonth() + 1,
+	day: d.getDate()
+});
+
+//jQuery example
+$('#simply-countdown-losange').simplyCountdown({
+	year: d.getFullYear(),
+	month: d.getMonth() + 1,
+	day: d.getDate(),
+	enableUtc: false
+});
+</script>

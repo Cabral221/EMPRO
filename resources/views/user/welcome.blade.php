@@ -1,7 +1,9 @@
 @extends('user.app')
- @section('bg-img',asset('user/img/home-bg.jpg'))
- @section('title','Welcome To EMPRO')
+
+@section('title','Welcome To EMPRO')
+@section('bg-img',asset('user/img/home-bg.jpg'))
 @section('sub-heding','Un Eleve Un Metier Une Proffession')
+
 @section('head')
 <meta name="csrf-token" content="{{ csrf_token() }}">
   <style>
@@ -10,7 +12,8 @@
     }
   </style>
 @endsection
- @section('main-content')
+
+@section('main-content')
 	<div id="fh5co-course-categories">
 		<div class="container">
 			<div class="row animate-box">
@@ -131,9 +134,9 @@
 		</div>
 	</div>
 	
- @endsection
+@endsection
 
- @section('js')
-<script src=" {{ asset('js/app.js') }} "></script>
- @endsection
+@section('js')
+	<script src=" {{ asset('js/app.js') }} "></script>
+@endsection
 
